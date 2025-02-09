@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+fieldset {
+    border: 5px inset black;
+    margin-top: -150px;
+    width:max-content;
+}
+legend {
+    
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.cabecalho{
+    text-align: center;
+
+}
+.cabecalho p {
+    font-size: 25px;
+}
+.logo{
+
+    margin-bottom: 3em;
+}
+.logo p{
+    text-align: center;
+    font-size: 30px;
+}
+.registros{
+    text-decoration: none;
+    width: max-content;
+    height: max-content;
+}
+.cadastro{
+    text-decoration: none;
+    margin-left: 1cm;
+    height: max-content;
+    width: max-content;
+
+}
+
+.screen {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'cabecalho'
+    'sitebody'
+    'rodape';
+}
+
+.sitebody{
+    margin-top: 5em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'logoarea'
+    'buttonsarea';
+    border: 3px, solid;
+}
+
+.buttonsarea{
+    margin: 10px;
+    justify-content: center;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-areas:
+    'registro cadastro';
+}
